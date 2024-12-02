@@ -1,0 +1,27 @@
+{
+  "name": "3_valgavoth_typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "webpack-dev-server --port 8080",
+    "start:dev": "webpack serve --mode=development"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@babylonjs/core": "^7.34.1",
+    "@babylonjs/inspector": "^7.34.1",
+    "html-webpack-plugin": "^5.6.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  },
+  "dependencies": {
+    "babylonjs": "^7.35.1",
+    "tsc": "^2.0.4"
+  }
+}

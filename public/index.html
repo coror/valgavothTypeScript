@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Valgavoth</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ceviche+One&family=Viga&display=swap"
+      rel="stylesheet"
+    />
+<link href="https://fonts.googleapis.com/css2?family=Metamorphous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body class="disable-selection">
+     <!-- Dropdown container for CHARACTER CREATION -->
+     <div class="character-creation">
+      <div class="dropdown-container1">
+        <button id="reset-camera">Reset Camera</button>
+
+        <label for="select-hair" class="label">Select hair style:</label>
+        <div class="select-zoom">
+          <select id="select-hair">
+            <option value="">Select an item</option>
+            <option value="hair.aegon">Hair Aegon</option>
+            <option value="hair.antaenus">Hair Antaenus</option>
+            <option value="hair.isveltte">Hair Isveltte</option>
+            <option value="hair.zefren">Hair Zefren</option>
+          </select>
+          <input type="color" id="hairColorPicker" />
+          <button id="zoom-hair" class="zoom-button">
+            <img
+              src="/zoom-in.svg"
+              alt="Zoom Icon"
+              style="width: 14px; height: 14px"
+            />
+          </button>
+        </div>
+
+        <label for="select-cloth" class="label">Select cloth:</label>
+        <div class="select-zoom">
+          <select id="select-cloth">
+            <option value="">Select an item</option>
+            <option value="cloth.bluedemon.1">Cloth Bluedemon</option>
+            <option value="cloth.capkelvins">Cloth Capkelvins</option>
+            <option value="cloth.grand">Cloth Grand</option>
+            <option value="cloth.inigma">Cloth Inigma</option>
+            <option value="cloth.michiro">Cloth Michiro</option>
+            <option value="cloth.rudeus">Cloth Rudeus</option>
+            <option value="cloth.rufid">Cloth Rufid</option>
+            <option value="cloth.zyger">Cloth Zyger</option>
+          </select>
+          <button id="zoom-cloth">
+            <img
+              src="/zoom-in.svg"
+              alt="Zoom Icon"
+              style="width: 14px; height: 14px"
+            />
+          </button>
+        </div>
+
+        <label for="select-pants" class="label">Select pants:</label>
+        <div class="select-zoom">
+          <select id="select-pants">
+            <option value="pants.brown" selected>Pants Brown</option>
+            <option value="pants.magios">Pants Magios</option>
+            <option value="pants.martiz">Pants Martiz</option>
+            <option value="pants.white">Pants White</option>
+          </select>
+          <button id="zoom-pants">
+            <img
+              src="/zoom-in.svg"
+              alt="Zoom Icon"
+              style="width: 14px; height: 14px"
+            />
+          </button>
+        </div>
+
+        <label for="select-boots" class="label">Select boots:</label>
+        <div class="select-zoom">
+          <select id="select-boots">
+            <option value="">Select an item</option>
+            <option value="boots.classic">Boots Classic</option>
+            <option value="boots.danes">Boots Danes</option>
+            <option value="boots.silverboots">Boots Silverboots</option>
+            <option value="boots.sinbad">Boots Sinbad</option>
+          </select>
+          <button id="zoom-boots">
+            <img
+              src="/zoom-in.svg"
+              alt="Zoom Icon"
+              style="width: 14px; height: 14px"
+            />
+          </button>
+        </div>
+
+        <label for="select-gear" class="label">Select gear:</label>
+        <div class="select-zoom">
+          <select id="select-gear">
+            <option value="">Select an item</option>
+            <option value="gear.copperScale">Gear Copper Scale</option>
+            <option value="gear.silverdnine">Gear Silverdnine</option>
+          </select>
+          <button id="zoom-gear">
+            <img
+              src="/zoom-in.svg"
+              alt="Zoom Icon"
+              style="width: 14px; height: 14px"
+            />
+          </button>
+        </div>
+
+        <label for="select-armor" class="label">Select armor:</label>
+        <div class="select-zoom">
+          <select id="select-armor">
+            <option value="">Select an item</option>
+            <option value="armor.armsteel">Armor Armsteel</option>
+            <option value="armor.chiefplate">Armor Chiefplate</option>
+            <option value="armor.cladarmor">Armor Cladarmor</option>
+            <option value="armor.hydra">Armor Hydra</option>
+            <option value="armor.karba">Armor Karba</option>
+            <option value="armor.karparmor">Armor Karparmor</option>
+          </select>
+          <button id="zoom-armor">
+            <img
+              src="/zoom-in.svg"
+              alt="Zoom Icon"
+              style="width: 14px; height: 14px"
+            />
+          </button>
+        </div>
+      </div>
+      <div class="dropdown-container2">
+        <label for="select-weapon" class="label">Select weapon:</label>
+        <div class="select-zoom">
+          <select id="select-weapon">
+            <option value="">Select an item</option>
+            <option value="sword.redprince">Red Prince Sword</option>
+            <option value="sword.normal">Normal Sword</option>
+            <option value="sword.grimblue">Grim Blue Sword</option>
+            <option value="sword.ruztysword">Rusty Sword</option>
+            <option value="sword.huntingsword">Hunting Sword</option>
+            <option value="sword.dagger">Dagger</option>
+            <option value="sword.stick">Stick</option>
+            <option value="sword.bladefury">Blade Fury</option>
+            <!-- <option value="sword.rod">Rod</option> -->
+            <option value="sword.sarpion">Sarpion</option>
+            <option value="sword.pickaxe">Pickaxe</option>
+            <option value="sword.falkata">Falkata</option>
+            <option value="sword.drakfoid">Drakfoid Sword</option>
+            <option value="sword.villageSpear">Village Spear</option>
+            <option value="sword.dgerSpear">Dagger Spear</option>
+            <option value="sword.dragonSpear">Dragon Spear</option>
+            <option value="sword.staffofmare">Staff of Mare</option>
+            <option value="sword.oakblade">Oak Blade</option>
+            <option value="sword.masfinaBlade">Masfina Blade</option>
+            <option value="sword.grimthor">Grimthor</option>
+            <option value="sword.majesty">Majesty Sword</option>
+            <!-- <option value="sword.golemsbirth">Golem's Birth</option> -->
+            <option value="sword.demonsidle">Demon's Idle</option>
+            <option value="sword.beesting">Bee Sting</option>
+          </select>
+          <button id="zoom-weapon">
+            <img
+              src="/zoom-in.svg"
+              alt="Zoom Icon"
+              style="width: 14px; height: 14px"
+            />
+          </button>
+        </div>
+
+        <label for="select-shield" class="label">Select shield:</label>
+        <div class="select-zoom">
+          <select id="select-shield">
+            <option value="">Select an item</option>
+            <option value="shield.safeshield">Safeshield</option>
+            <option value="shield.ancilia">Ancilia</option>
+            <option value="shield.zviadi">Zviadi</option>
+          </select>
+          <button id="zoom-shield">
+            <img
+              src="/zoom-in.svg"
+              alt="Zoom Icon"
+              style="width: 14px; height: 14px"
+            />
+          </button>
+        </div>
+      </div>
+      <div><button id="play">Play</button></div>
+      <div class="name-box">
+        <label for="char-name">Character name:</label
+        ><input type="text" id="char-name" />
+      </div>
+    </div>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script> <!--start detecting touch input for mobile-->
+</body>
+</html>
